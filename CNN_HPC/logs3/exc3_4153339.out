@@ -1,0 +1,193 @@
+Job started on iris-183 at Wed May 28 15:33:43 CEST 2025
+Running on 2 GPU(s)
+Wed May 28 15:33:43 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-SXM2-16GB           On  |   00000000:1D:00.0 Off |                    0 |
+| N/A   35C    P0             41W /  300W |       1MiB /  16384MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  Tesla V100-SXM2-16GB           On  |   00000000:1E:00.0 Off |                    0 |
+| N/A   37C    P0             42W /  300W |       1MiB /  16384MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[Rank 0] Using device: cuda:0
+[Rank 1] Using device: cuda:1
+[Rank 1] Using device: cuda:1
+iris-183:3733572:3733572 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^lo,docker0
+iris-183:3733572:3733572 [0] NCCL INFO Bootstrap : Using eno1:172.17.6.183<0>
+iris-183:3733572:3733572 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+iris-183:3733572:3733572 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+iris-183:3733572:3733572 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+iris-183:3733572:3733572 [0] NCCL INFO cudaDriverVersion 12070
+NCCL version 2.21.5+cuda12.4
+[Rank 0] Epoch [1/50] Loss: 3.8630
+[Rank 1] Epoch [1/50] Loss: 3.8581
+[Rank 1] Epoch [2/50] Loss: 3.0029
+[Rank 0] Epoch [2/50] Loss: 2.9882
+[Rank 0] Epoch [3/50] Loss: 2.5439
+[Rank 1] Epoch [3/50] Loss: 2.5257
+[Rank 0] Epoch [4/50] Loss: 2.1980
+[Rank 1] Epoch [4/50] Loss: 2.2013
+[Rank 1] Epoch [5/50] Loss: 1.9524
+[Rank 0] Epoch [5/50] Loss: 1.9448
+[Rank 0] Epoch [6/50] Loss: 1.7240
+[Rank 1] Epoch [6/50] Loss: 1.7272
+[Rank 1] Epoch [7/50] Loss: 1.5361
+[Rank 0] Epoch [7/50] Loss: 1.5222
+[Rank 0] Epoch [8/50] Loss: 1.3488
+[Rank 1] Epoch [8/50] Loss: 1.3431
+[Rank 1] Epoch [9/50] Loss: 1.1846
+[Rank 0] Epoch [9/50] Loss: 1.1805
+[Rank 0] Epoch [10/50] Loss: 1.0311
+[Rank 1] Epoch [10/50] Loss: 1.0207
+[Rank 1] Epoch [11/50] Loss: 0.8913
+[Rank 0] Epoch [11/50] Loss: 0.8919
+[Rank 1] Epoch [12/50] Loss: 0.7729
+[Rank 0] Epoch [12/50] Loss: 0.7605
+[Rank 1] Epoch [13/50] Loss: 0.6787
+[Rank 0] Epoch [13/50] Loss: 0.6574
+[Rank 0] Epoch [14/50] Loss: 0.5750
+[Rank 1] Epoch [14/50] Loss: 0.5762
+[Rank 0] Epoch [15/50] Loss: 0.5059
+[Rank 1] Epoch [15/50] Loss: 0.5091
+[Rank 0] Epoch [16/50] Loss: 0.4457
+[Rank 1] Epoch [16/50] Loss: 0.4451
+[Rank 1] Epoch [17/50] Loss: 0.4090
+[Rank 0] Epoch [17/50] Loss: 0.3954
+[Rank 1] Epoch [18/50] Loss: 0.3626
+[Rank 0] Epoch [18/50] Loss: 0.3599
+[Rank 0] Epoch [19/50] Loss: 0.3334
+[Rank 1] Epoch [19/50] Loss: 0.3247
+[Rank 0] Epoch [20/50] Loss: 0.3097
+[Rank 1] Epoch [20/50] Loss: 0.3084
+[Rank 0] Epoch [21/50] Loss: 0.2808
+[Rank 1] Epoch [21/50] Loss: 0.2748
+[Rank 1] Epoch [22/50] Loss: 0.2657
+[Rank 0] Epoch [22/50] Loss: 0.2735
+[Rank 0] Epoch [23/50] Loss: 0.2682
+[Rank 1] Epoch [23/50] Loss: 0.2607
+[Rank 1] Epoch [24/50] Loss: 0.2435
+[Rank 0] Epoch [24/50] Loss: 0.2479
+[Rank 1] Epoch [25/50] Loss: 0.2294
+[Rank 0] Epoch [25/50] Loss: 0.2397
+[Rank 1] Epoch [26/50] Loss: 0.2313
+[Rank 0] Epoch [26/50] Loss: 0.2331
+[Rank 0] Epoch [27/50] Loss: 0.2206
+[Rank 1] Epoch [27/50] Loss: 0.2181
+[Rank 1] Epoch [28/50] Loss: 0.2083
+[Rank 0] Epoch [28/50] Loss: 0.2068
+[Rank 1] Epoch [29/50] Loss: 0.2025
+[Rank 0] Epoch [29/50] Loss: 0.2024
+[Rank 1] Epoch [30/50] Loss: 0.2026
+[Rank 0] Epoch [30/50] Loss: 0.1971
+[Rank 0] Epoch [31/50] Loss: 0.2001
+[Rank 1] Epoch [31/50] Loss: 0.1924
+[Rank 0] Epoch [32/50] Loss: 0.1864
+[Rank 1] Epoch [32/50] Loss: 0.1907
+[Rank 1] Epoch [33/50] Loss: 0.1790
+[Rank 0] Epoch [33/50] Loss: 0.1786
+[Rank 0] Epoch [34/50] Loss: 0.1734
+[Rank 1] Epoch [34/50] Loss: 0.1834
+[Rank 1] Epoch [35/50] Loss: 0.1781
+[Rank 0] Epoch [35/50] Loss: 0.1719
+[Rank 1] Epoch [36/50] Loss: 0.1718
+[Rank 0] Epoch [36/50] Loss: 0.1683
+[Rank 0] Epoch [37/50] Loss: 0.1705
+[Rank 1] Epoch [37/50] Loss: 0.1753
+[Rank 0] Epoch [38/50] Loss: 0.1728
+[Rank 1] Epoch [38/50] Loss: 0.1739
+[Rank 0] Epoch [39/50] Loss: 0.1676
+[Rank 1] Epoch [39/50] Loss: 0.1677
+[Rank 1] Epoch [40/50] Loss: 0.1607
+[Rank 0] Epoch [40/50] Loss: 0.1553
+[Rank 1] Epoch [41/50] Loss: 0.1604
+[Rank 0] Epoch [41/50] Loss: 0.1566
+[Rank 0] Epoch [42/50] Loss: 0.1492
+[Rank 1] Epoch [42/50] Loss: 0.1633
+[Rank 0] Epoch [43/50] Loss: 0.1547
+[Rank 1] Epoch [43/50] Loss: 0.1528
+[Rank 0] Epoch [44/50] Loss: 0.1456
+[Rank 1] Epoch [44/50] Loss: 0.1407
+[Rank 0] Epoch [45/50] Loss: 0.1516
+[Rank 1] Epoch [45/50] Loss: 0.1456
+[Rank 0] Epoch [46/50] Loss: 0.1483
+[Rank 1] Epoch [46/50] Loss: 0.1474
+[Rank 1] Epoch [47/50] Loss: 0.1435
+[Rank 0] Epoch [47/50] Loss: 0.1420
+[Rank 1] Epoch [48/50] Loss: 0.1403
+[Rank 0] Epoch [48/50] Loss: 0.1425
+[Rank 1] Epoch [49/50] Loss: 0.1425
+[Rank 0] Epoch [49/50] Loss: 0.1418
+[Rank 1] Epoch [50/50] Loss: 0.1364
+[Rank 1] Training time: 1788.59 seconds
+iris-183:3733574:3733574 [1] NCCL INFO cudaDriverVersion 12070
+iris-183:3733574:3733574 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^lo,docker0
+iris-183:3733574:3733574 [1] NCCL INFO Bootstrap : Using eno1:172.17.6.183<0>
+iris-183:3733574:3733574 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+iris-183:3733574:3733574 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+iris-183:3733574:3733574 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+iris-183:3733574:3733574 [1] NCCL INFO Comm config Blocking set to 1
+iris-183:3733574:3733690 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+iris-183:3733574:3733690 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^lo,docker0
+iris-183:3733574:3733690 [1] NCCL INFO NET/Socket : Using [0]eno1:172.17.6.183<0> [1]ib0:172.19.6.183<0>
+iris-183:3733574:3733690 [1] NCCL INFO Using non-device net plugin version 0
+iris-183:3733574:3733690 [1] NCCL INFO Using network Socket
+iris-183:3733574:3733690 [1] NCCL INFO ncclCommInitRank comm 0x9a44800 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 1e000 commId 0x35fbf3a113bf5cf3 - Init START
+iris-183:3733574:3733690 [1] NCCL INFO comm 0x9a44800 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+iris-183:3733574:3733690 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1 [2] -1/-1/-1->1->0 [3] 0/-1/-1->1->-1
+iris-183:3733574:3733690 [1] NCCL INFO P2P Chunksize set to 524288
+iris-183:3733574:3733690 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM
+iris-183:3733574:3733690 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM
+iris-183:3733574:3733690 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+iris-183:3733574:3733690 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM
+iris-183:3733574:3733690 [1] NCCL INFO Connected all rings
+iris-183:3733574:3733690 [1] NCCL INFO Connected all trees
+iris-183:3733574:3733690 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+iris-183:3733574:3733690 [1] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+iris-183:3733574:3733690 [1] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+iris-183:3733574:3733690 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+iris-183:3733574:3733690 [1] NCCL INFO ncclCommInitRank comm 0x9a44800 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 1e000 commId 0x35fbf3a113bf5cf3 - Init COMPLETE
+iris-183:3733574:3733574 [1] NCCL INFO comm 0x9a44800 rank 1 nranks 2 cudaDev 1 busId 1e000 - Destroy COMPLETE
+[Rank 0] Epoch [50/50] Loss: 0.1387
+[Rank 0] Training time: 1788.59 seconds
+iris-183:3733572:3733572 [0] NCCL INFO Comm config Blocking set to 1
+iris-183:3733572:3733689 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+iris-183:3733572:3733689 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^lo,docker0
+iris-183:3733572:3733689 [0] NCCL INFO NET/Socket : Using [0]eno1:172.17.6.183<0> [1]ib0:172.19.6.183<0>
+iris-183:3733572:3733689 [0] NCCL INFO Using non-device net plugin version 0
+iris-183:3733572:3733689 [0] NCCL INFO Using network Socket
+iris-183:3733572:3733689 [0] NCCL INFO ncclCommInitRank comm 0x5930940 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 1d000 commId 0x35fbf3a113bf5cf3 - Init START
+iris-183:3733572:3733689 [0] NCCL INFO comm 0x5930940 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+iris-183:3733572:3733689 [0] NCCL INFO Channel 00/04 :    0   1
+iris-183:3733572:3733689 [0] NCCL INFO Channel 01/04 :    0   1
+iris-183:3733572:3733689 [0] NCCL INFO Channel 02/04 :    0   1
+iris-183:3733572:3733689 [0] NCCL INFO Channel 03/04 :    0   1
+iris-183:3733572:3733689 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1 [2] 1/-1/-1->0->-1 [3] -1/-1/-1->0->1
+iris-183:3733572:3733689 [0] NCCL INFO P2P Chunksize set to 524288
+iris-183:3733572:3733689 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+iris-183:3733572:3733689 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+iris-183:3733572:3733689 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM
+iris-183:3733572:3733689 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM
+iris-183:3733572:3733689 [0] NCCL INFO Connected all rings
+iris-183:3733572:3733689 [0] NCCL INFO Connected all trees
+iris-183:3733572:3733689 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+iris-183:3733572:3733689 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+iris-183:3733572:3733689 [0] NCCL INFO TUNER/Plugin: Plugin load returned 11 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+iris-183:3733572:3733689 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+iris-183:3733572:3733689 [0] NCCL INFO ncclCommInitRank comm 0x5930940 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 1d000 commId 0x35fbf3a113bf5cf3 - Init COMPLETE
+iris-183:3733572:3733572 [0] NCCL INFO comm 0x5930940 rank 0 nranks 2 cudaDev 0 busId 1d000 - Destroy COMPLETE
+Job finished at Wed May 28 16:03:43 CEST 2025

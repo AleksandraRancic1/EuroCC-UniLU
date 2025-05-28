@@ -1,0 +1,31 @@
+W0528 15:33:50.709654 3733554 /mnt/aiongpfs/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/multiprocessing/spawn.py:169] Terminating process 3733575 via signal SIGTERM
+Traceback (most recent call last):
+  File "/mnt/aiongpfs/users/arancic/EuroCC/Exercise3.py", line 133, in <module>
+    mp.spawn(main, args=(world_size,), nprocs=world_size, join=True)
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 215, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/mnt/aiongpfs/users/arancic/EuroCC/Exercise3.py", line 82, in main
+    dist.init_process_group(backend='nccl', init_method='env://', rank=rank, world_size=world_size)
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+    return func(*args, **kwargs)
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/distributed/c10d_logger.py", line 95, in wrapper
+    func_return = func(*args, **kwargs)
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 1714, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/distributed/rendezvous.py", line 274, in _env_rendezvous_handler
+    store = _create_c10d_store(
+  File "/home/users/arancic/miniconda3/envs/ml_env_39/lib/python3.9/site-packages/torch/distributed/rendezvous.py", line 194, in _create_c10d_store
+    return TCPStore(
+RuntimeError: The server socket has failed to listen on any local network address. port: 12775, useIpv6: 0, code: -98, name: EADDRINUSE, message: address already in use
+
+srun: error: iris-183: task 0: Exited with exit code 1

@@ -1,0 +1,6 @@
+Job started on iris-098 at Wed May 28 15:16:02 CEST 2025
+Running on 16 CPU core(s)
+Test accuracy: 84.76%
+inference time on cpu is: 6.79 seconds
+Saved predictions to inference_outputs/predictions_batch1.png
+Job finished at Wed May 28 15:16:22 CEST 2025

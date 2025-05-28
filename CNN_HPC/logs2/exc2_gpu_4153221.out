@@ -1,0 +1,77 @@
+Job started on iris-179 at Wed May 28 14:49:03 CEST 2025
+Running on 1 GPU(s)
+Wed May 28 14:49:03 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-SXM2-16GB           On  |   00000000:1A:00.0 Off |                    0 |
+| N/A   43C    P0             45W /  300W |       1MiB /  16384MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Using device: cuda
+Epoch [1/50] Loss: 1.2994
+Epoch [2/50] Loss: 0.8774
+Epoch [3/50] Loss: 0.6951
+Epoch [4/50] Loss: 0.5755
+Epoch [5/50] Loss: 0.4815
+Epoch [6/50] Loss: 0.3975
+Epoch [7/50] Loss: 0.3299
+Epoch [8/50] Loss: 0.2768
+Epoch [9/50] Loss: 0.2253
+Epoch [10/50] Loss: 0.1909
+Epoch [11/50] Loss: 0.1629
+Epoch [12/50] Loss: 0.1422
+Epoch [13/50] Loss: 0.1260
+Epoch [14/50] Loss: 0.1153
+Epoch [15/50] Loss: 0.1079
+Epoch [16/50] Loss: 0.1018
+Epoch [17/50] Loss: 0.0919
+Epoch [18/50] Loss: 0.0891
+Epoch [19/50] Loss: 0.0823
+Epoch [20/50] Loss: 0.0759
+Epoch [21/50] Loss: 0.0790
+Epoch [22/50] Loss: 0.0682
+Epoch [23/50] Loss: 0.0679
+Epoch [24/50] Loss: 0.0647
+Epoch [25/50] Loss: 0.0615
+Epoch [26/50] Loss: 0.0644
+Epoch [27/50] Loss: 0.0577
+Epoch [28/50] Loss: 0.0550
+Epoch [29/50] Loss: 0.0572
+Epoch [30/50] Loss: 0.0519
+Epoch [31/50] Loss: 0.0494
+Epoch [32/50] Loss: 0.0493
+Epoch [33/50] Loss: 0.0485
+Epoch [34/50] Loss: 0.0487
+Epoch [35/50] Loss: 0.0434
+Epoch [36/50] Loss: 0.0450
+Epoch [37/50] Loss: 0.0416
+Epoch [38/50] Loss: 0.0437
+Epoch [39/50] Loss: 0.0398
+Epoch [40/50] Loss: 0.0389
+Epoch [41/50] Loss: 0.0421
+Epoch [42/50] Loss: 0.0344
+Epoch [43/50] Loss: 0.0369
+Epoch [44/50] Loss: 0.0390
+Epoch [45/50] Loss: 0.0343
+Epoch [46/50] Loss: 0.0335
+Epoch [47/50] Loss: 0.0336
+Epoch [48/50] Loss: 0.0324
+Epoch [49/50] Loss: 0.0364
+Epoch [50/50] Loss: 0.0308
+
+ Training time on cuda: 262.93 seconds
+model is saves ad model4_cifar10.pth
+Job finished at Wed May 28 14:54:58 CEST 2025

@@ -1,0 +1,56 @@
+Job started on iris-133 at Wed May 28 14:20:33 CEST 2025
+Running on 16 CPU core(s)
+Using device: cpu
+Epoch [1/50] Loss: 1.3015
+Epoch [2/50] Loss: 0.8889
+Epoch [3/50] Loss: 0.7049
+Epoch [4/50] Loss: 0.5842
+Epoch [5/50] Loss: 0.4861
+Epoch [6/50] Loss: 0.4072
+Epoch [7/50] Loss: 0.3358
+Epoch [8/50] Loss: 0.2813
+Epoch [9/50] Loss: 0.2336
+Epoch [10/50] Loss: 0.1937
+Epoch [11/50] Loss: 0.1688
+Epoch [12/50] Loss: 0.1489
+Epoch [13/50] Loss: 0.1324
+Epoch [14/50] Loss: 0.1167
+Epoch [15/50] Loss: 0.1119
+Epoch [16/50] Loss: 0.1009
+Epoch [17/50] Loss: 0.0948
+Epoch [18/50] Loss: 0.0887
+Epoch [19/50] Loss: 0.0840
+Epoch [20/50] Loss: 0.0786
+Epoch [21/50] Loss: 0.0806
+Epoch [22/50] Loss: 0.0725
+Epoch [23/50] Loss: 0.0670
+Epoch [24/50] Loss: 0.0671
+Epoch [25/50] Loss: 0.0625
+Epoch [26/50] Loss: 0.0621
+Epoch [27/50] Loss: 0.0555
+Epoch [28/50] Loss: 0.0590
+Epoch [29/50] Loss: 0.0530
+Epoch [30/50] Loss: 0.0566
+Epoch [31/50] Loss: 0.0528
+Epoch [32/50] Loss: 0.0479
+Epoch [33/50] Loss: 0.0500
+Epoch [34/50] Loss: 0.0502
+Epoch [35/50] Loss: 0.0457
+Epoch [36/50] Loss: 0.0468
+Epoch [37/50] Loss: 0.0453
+Epoch [38/50] Loss: 0.0418
+Epoch [39/50] Loss: 0.0422
+Epoch [40/50] Loss: 0.0365
+Epoch [41/50] Loss: 0.0399
+Epoch [42/50] Loss: 0.0350
+Epoch [43/50] Loss: 0.0406
+Epoch [44/50] Loss: 0.0370
+Epoch [45/50] Loss: 0.0342
+Epoch [46/50] Loss: 0.0362
+Epoch [47/50] Loss: 0.0345
+Epoch [48/50] Loss: 0.0328
+Epoch [49/50] Loss: 0.0328
+Epoch [50/50] Loss: 0.0317
+
+ Training time on cpu: 3832.38 seconds
+Job finished at Wed May 28 15:24:31 CEST 2025
