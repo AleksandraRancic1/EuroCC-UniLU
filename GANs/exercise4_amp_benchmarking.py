@@ -130,7 +130,7 @@ class Discriminator(nn.Module):
             nn.BatchNorm2d(ndf*4), nn.LeakyReLU(0.2, True),
             nn.Conv2d(ndf*4, ndf*8, 4, 2, 1, bias=False),
             nn.BatchNorm2d(ndf*8), nn.LeakyReLU(0.2, True),
-            nn.Conv2d(ndf*8, 1,    4, 1, 0, bias=False), nn.Sigmoid())
+            nn.Conv2d(ndf*8, 1,    4, 1, 0, bias=False))
 
     def forward(self, x):
         return self.net(x).view(-1)
@@ -387,7 +387,7 @@ def run_round(label, use_amp, batch_size, device, cfg, amp_dtype):
                        betas=(cfg["beta1"], cfg["beta2"]))
     opt_D = optim.Adam(D.parameters(), lr=cfg["lr_d"],
                        betas=(cfg["beta1"], cfg["beta2"]))
-    criterion   = nn.BCELoss()
+    criterion   = nn.BCEWithLogitsLoss()
     loader      = build_loader(cfg, batch_size, cfg["num_workers"])
     fixed_noise = torch.randn(cfg["n_eval_imgs"], cfg["latent_dim"], device=device)
     # GradScaler: enabled=False makes it a no-op (safe for fp32 runs too)
