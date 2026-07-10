@@ -32,13 +32,60 @@ python -m pip install "dask[distributed]==2024.9.0"
 rsync -avz path-to-your-file/file-name.py iris-cluster:/path-to-your-folder
 
 
+scripts
+exercise 1
+#!/bin/bash
+#SBATCH --job-name=ex1
+#SBATCH --account=em4hpc_school_2026
+#SBATCH --reservation=hpda_cpu
+#SBATCH --partition=batch
+#SBATCH --qos=normal
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=28
+#SBATCH --mem=112G
+#SBATCH --time=02:00:00
+#SBATCH --output=logs/ex1_%j.out
+#SBATCH --error=logs/ex1_%j.err
 
-<img width="468" height="55" alt="image" src="https://github.com/user-attachments/assets/6b494c73-468d-41d9-b286-5e29e44be253" />
+mkdir -p logs
+ 
+source /etc/profile
 
-<img width="468" height="295" alt="image" src="https://github.com/user-attachments/assets/abde1f9a-b7e0-4fad-95ba-ca6b15fbcc54" />
+module --force purge
 
-<img width="468" height="152" alt="image" src="https://github.com/user-attachments/assets/b9a4f986-c6ea-4c17-a6ea-d1524e8d2bea" />
+module load env/development/2024a
+module load lang/Python/3.12.3-GCCcore-13.3.0
+module load lang/SciPy-bundle/2024.05-gfbf-2024a
+module load data/Arrow/17.0.0-gfbf-2024a
 
+python exercise1_baseline.py
 
-<img width="468" height="200" alt="image" src="https://github.com/user-attachments/assets/f16677b1-3699-4b1f-a5a8-2e9091984a14" />
+exercise 2
+#!/bin/bash
+#SBATCH --job-name=ex2
+#SBATCH --account=em4hpc_school_2026
+#SBATCH --reservation=hpda_cpu
+#SBATCH --partition=batch
+#SBATCH --qos=normal
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=28
+#SBATCH --mem=112G
+#SBATCH --time=02:00:00
+#SBATCH --exclusive
+#SBATCH --output=logs/ex2_%j.out
+#SBATCH --error=logs/ex2_%j.err
 
+ 
+source /etc/profile
+
+module --force purge
+
+module load env/development/2024a
+module load lang/Python/3.12.3-GCCcore-13.3.0
+module load lang/SciPy-bundle/2024.05-gfbf-2024a
+module load data/Arrow/17.0.0-gfbf-2024a
+module load tools/dask/2024.9.0-gfbf-2024a
+
+python exercise2_dask_singlenode.py
