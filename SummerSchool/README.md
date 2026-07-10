@@ -27,7 +27,13 @@ Check which Python is now active:
 Which python 
 Python --version
 Install Dask:
-python -m pip install "dask[distributed]==2024.9.0"<img width="468" height="55" alt="image" src="https://github.com/user-attachments/assets/6b494c73-468d-41d9-b286-5e29e44be253" />
+python -m pip install "dask[distributed]==2024.9.0"
+
+rsync -avz path-to-your-file/file-name.py iris-cluster:/path-to-your-folder
+
+
+
+<img width="468" height="55" alt="image" src="https://github.com/user-attachments/assets/6b494c73-468d-41d9-b286-5e29e44be253" />
 
 <img width="468" height="295" alt="image" src="https://github.com/user-attachments/assets/abde1f9a-b7e0-4fad-95ba-ca6b15fbcc54" />
 
